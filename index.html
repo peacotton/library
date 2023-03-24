@@ -9,6 +9,40 @@
     <title>Library</title>
 </head>
 <body>
-    
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <form action="" method="post" id="userBook">
+                
+                    <label for="title">Title: </label>
+                    <input type="text" name="title" id="title">
+                
+                    <label for="author">Author: </label>
+                    <input type="text" name="author">
+                
+                
+                    <label for="pages">Pages: </label>
+                    <input type="tel" name="pages">
+                
+                    <label for="read">Read: </label>
+                    <input type="checkbox" name="read" id="read">
+                   
+                <button type="submit" id="confirm">Confirm</button>
+            </form>
+        </div>
+    </div>
+    <div id="bookModal" class="modal">
+        <div class="modal-content">
+            <span id="close" class="close">&times;</span>
+            <div id="bookText"></div>
+            <div id="delete" class="close">&times;&times;&times; REMOVE BOOK &times;&times;&times;</div>
+        </div>
+    </div>
+    <div id="bookshelf">
+        <div class="book" data-index-number="1">Deep Work</div>
+        <div class="book" data-index-number="2">Harry Potter and the Sorcerer's Stone</div>
+        <div class="book" data-index-number="3">A Game of Thrones</div>
+    </div>
+    <button id="addBook">Add Book</button>
 </body>
 </html>
